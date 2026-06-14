@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Careers — Pureframe Labs</title>
+  <meta name="description" content="Join Pureframe Labs — we're looking for talented, curious people who love shipping great products. Remote-first, competitive pay, real impact.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/careers.css">
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!-- NAVIGATION                                        -->
+<!-- ═══════════════════════════════════════════════════ -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a class="nav-logo" href="index.html">
+      Pureframe<span class="dot">.</span>
+    </a>
+    <div class="nav-links">
+      <a href="index.html"                             data-page="home">Home</a>
+      <a href="projects.html"                          data-page="projects">Projects</a>
+      <a href="careers.html"           class="active"  data-page="careers">Careers</a>
+      <a href="about.html"                             data-page="about">About</a>
+      <a href="about.html#contact-section"             data-page="contact">Contact</a>
+    </div>
+    <a class="btn-nav" href="about.html#contact-section">Book a Consultation</a>
+    <button class="hamburger" id="hamburger">☰</button>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="projects.html">Projects</a>
+  <a href="careers.html">Careers</a>
+  <a href="about.html">About</a>
+  <a href="about.html#contact-section">Contact</a>
+</div>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!-- PAGE: CAREERS                                      -->
+<!-- ═══════════════════════════════════════════════════ -->
+<main class="page-content">
+
+  <div class="careers-hero">
+    <div class="container">
+      <div class="section-eyebrow">Join the Team</div>
+      <h1>Build the future with us</h1>
+      <p>We're looking for talented, curious people who love shipping great products. No corporate nonsense — just real work with real impact.</p>
+    </div>
+  </div>
+
+  <!-- PERKS -->
+  <section class="alt compact">
+    <div class="container">
+      <div class="reveal section-header-center">
+        <div class="section-eyebrow">Life at Pureframe</div>
+        <h2 class="section-title">Why you'll love working here</h2>
+      </div>
+      <div class="perks-grid">
+        <div class="perk-card reveal"><div class="perk-icon">🌍</div><div class="perk-title">Remote-first</div><div class="perk-desc">Work from anywhere in India. We have a Pune HQ for those who prefer an office, but remote is fully supported.</div></div>
+        <div class="perk-card reveal"><div class="perk-icon">📈</div><div class="perk-title">Fast growth</div><div class="perk-desc">You'll own real projects from day one. No hand-holding, no back-bench work.</div></div>
+        <div class="perk-card reveal"><div class="perk-icon">💰</div><div class="perk-title">Competitive pay</div><div class="perk-desc">Market-rate salaries plus performance bonuses. We review compensation every 6 months.</div></div>
+        <div class="perk-card reveal"><div class="perk-icon">🏥</div><div class="perk-title">Health coverage</div><div class="perk-desc">Full medical, dental, and vision insurance for you and your family.</div></div>
+        <div class="perk-card reveal"><div class="perk-icon">📚</div><div class="perk-title">Learning budget</div><div class="perk-desc">₹30,000/year for courses, books, and conferences. We invest in your growth.</div></div>
+        <div class="perk-card reveal"><div class="perk-icon">🛠️</div><div class="perk-title">Great tooling</div><div class="perk-desc">MacBook Pro, premium software subscriptions, and anything you need to do your best work.</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- APPLICATION FORM -->
+  <section id="careers-apply-section">
+    <div class="container">
+      <div class="reveal section-header-center section-header-mb">
+        <div class="section-eyebrow">Open Application</div>
+        <h2 class="section-title">Apply to join Pureframe</h2>
+        <p class="section-sub-text">Don't see a specific role? Send us your details and resume — we're always looking for great people.</p>
+      </div>
+
+      <div class="apply-card reveal">
+        <h3>Your Application</h3>
+        <p>Fill in the form below and we'll get back to you within 3 business days.</p>
+
+        <div class="careers-form">
+          <!-- Name -->
+          <div class="form-row">
+            <div class="form-group">
+              <label for="c-first">First name *</label>
+              <input type="text" id="c-first" placeholder="Arjun" required autocomplete="given-name">
+            </div>
+            <div class="form-group">
+              <label for="c-last">Last name *</label>
+              <input type="text" id="c-last" placeholder="Kapoor" required autocomplete="family-name">
+            </div>
+          </div>
+
+          <!-- Contact -->
+          <div class="form-row">
+            <div class="form-group">
+              <label for="c-email">Email address *</label>
+              <input type="email" id="c-email" placeholder="arjun@email.com" required autocomplete="email">
+            </div>
+            <div class="form-group">
+              <label for="c-phone">Phone number *</label>
+              <input type="tel" id="c-phone" placeholder="+91 98765 43210" required autocomplete="tel">
+            </div>
+          </div>
+
+          <!-- Role + Experience -->
+          <div class="form-row">
+            <div class="form-group">
+              <label for="c-role">Role you're interested in *</label>
+              <select id="c-role" required>
+                <option value="">Select a role</option>
+                <option>Frontend Engineer</option>
+                <option>Backend Engineer</option>
+                <option>Full-Stack Engineer</option>
+                <option>Mobile Developer (React Native)</option>
+                <option>Product Designer (UI/UX)</option>
+                <option>DevOps / Cloud Engineer</option>
+                <option>AI / ML Engineer</option>
+                <option>Project Manager</option>
+                <option>Open Application (Any Role)</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="c-exp">Years of experience *</label>
+              <select id="c-exp" required>
+                <option value="">Select experience level</option>
+                <option>Fresher (0–1 years)</option>
+                <option>Junior (1–3 years)</option>
+                <option>Mid-level (3–5 years)</option>
+                <option>Senior (5–8 years)</option>
+                <option>Lead / Principal (8+ years)</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- LinkedIn + Portfolio -->
+          <div class="form-row">
+            <div class="form-group">
+              <label for="c-linkedin">LinkedIn URL</label>
+              <input type="url" id="c-linkedin" placeholder="https://linkedin.com/in/yourname">
+            </div>
+            <div class="form-group">
+              <label for="c-portfolio">Portfolio / GitHub URL</label>
+              <input type="url" id="c-portfolio" placeholder="https://yourportfolio.com">
+            </div>
+          </div>
+
+          <!-- Cover message -->
+          <div class="form-group">
+            <label for="c-cover">Why Pureframe?</label>
+            <textarea id="c-cover" class="textarea-cover" placeholder="Tell us what excites you about joining Pureframe and what you'd bring to the team…"></textarea>
+          </div>
+
+          <!-- Resume upload -->
+          <div class="form-group">
+            <label>Resume / CV * <span class="label-hint">(PDF, DOC, or DOCX · max 10 MB)</span></label>
+            <div class="file-upload-area" id="resumeDropZone">
+              <input type="file" id="c-resume" accept=".pdf,.doc,.docx">
+              <div class="file-upload-icon">📄</div>
+              <div class="file-upload-title">Drop your resume here or click to upload</div>
+              <div class="file-upload-sub">PDF, DOC, DOCX · Max 10 MB</div>
+              <div class="file-name-display" id="fileNameDisplay"></div>
+            </div>
+          </div>
+
+          <button id="careersSubmitBtn" class="btn-primary btn-full">
+            Submit Application →
+          </button>
+          <div class="form-status" id="careersFormStatus"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-bottom footer-bottom-simple">
+      <span>© 2026 Pureframe Labs Pvt. Ltd. All rights reserved.</span>
+      <a class="btn-primary btn-sm" href="about.html#contact-section">Have a project? Talk to us →</a>
+    </div>
+  </div>
+</footer>
+
+<!-- SCRIPTS -->
+<script src="js/animations.js"></script>
+<script src="js/main.js"></script>
+<script src="js/careers-form.js"></script>
+</body>
+</html>

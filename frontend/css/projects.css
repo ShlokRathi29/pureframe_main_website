@@ -1,0 +1,210 @@
+/* ============================================================
+   projects.css — Pureframe Labs
+   Projects page: hero, search, grid, cards
+   ============================================================ */
+
+/* ── PAGE HERO ── */
+.page-hero {
+  padding: 100px 0 60px;
+  background: var(--bg2);
+  border-bottom: 1px solid var(--border);
+}
+
+.page-hero h1 {
+  font-size: clamp(36px, 5vw, 56px);
+  font-weight: 800;
+  letter-spacing: -1px;
+  margin-bottom: 16px;
+}
+
+.page-hero p {
+  font-size: 18px;
+  color: var(--text2);
+  max-width: 520px;
+}
+
+/* ── SEARCH ── */
+.search-bar-wrap { margin: 40px 0 0; }
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--bg);
+  border: 1.5px solid var(--border);
+  border-radius: 999px;
+  padding: 0 20px;
+  height: 48px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  max-width: 480px;
+  transition: border-color var(--transition), box-shadow var(--transition);
+}
+
+.search-bar:focus-within {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 4px rgba(37,99,235,0.1);
+}
+
+.search-bar input {
+  border: none;
+  outline: none;
+  font-size: 15px;
+  color: var(--text);
+  background: transparent;
+  flex: 1;
+  font-family: inherit;
+}
+
+.search-icon { font-size: 18px; color: var(--text2); }
+
+/* ── PROJECTS SECTION ── */
+.projects-section { padding: 80px 0; }
+
+.section-label {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 32px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.section-label span { width: 8px; height: 8px; border-radius: 50%; }
+.span-done    { background: var(--success); }
+.span-ongoing { background: #F59E0B; }
+
+/* ── PROJECT GRID & CARDS ── */
+.proj-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 24px;
+  margin-bottom: 60px;
+}
+
+.proj-card {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 28px;
+  transition: all var(--transition-smooth);
+  display: flex;
+  flex-direction: column;
+}
+.proj-card:hover {
+  box-shadow: var(--card-shadow-hover);
+  transform: translateY(-4px);
+}
+.proj-card[style*="display: none"] { display: none !important; }
+
+.proj-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+
+.proj-name   { font-size: 18px; font-weight: 700; color: var(--text); }
+.proj-status {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 6px;
+  flex-shrink: 0;
+}
+.status-live      { background: rgba(16,185,129,0.1); color: #059669; }
+.status-completed { background: rgba(37,99,235,0.1); color: var(--primary); }
+.status-ongoing   { background: rgba(245,158,11,0.1); color: #b45309; }
+
+.proj-desc {
+  font-size: 14px;
+  color: var(--text2);
+  line-height: 1.65;
+  margin-bottom: 16px;
+  flex: 1;
+}
+
+.proj-techs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 20px;
+}
+
+.tech-tag {
+  font-size: 12px;
+  padding: 3px 10px;
+  border-radius: 6px;
+  background: var(--bg2);
+  color: var(--text2);
+  border: 1px solid var(--border);
+  font-weight: 500;
+}
+
+.proj-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+}
+
+.proj-date { font-size: 13px; color: var(--text2); }
+
+.btn-visit {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--primary);
+  background: rgba(37,99,235,0.08);
+  border: 1px solid rgba(37,99,235,0.2);
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all var(--transition);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: inherit;
+}
+.btn-visit:hover { background: rgba(37,99,235,0.15); }
+
+/* ── PROGRESS BAR (for ongoing projects) ── */
+.prog-bar-wrap { margin: 12px 0; }
+.prog-label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  color: var(--text2);
+  margin-bottom: 8px;
+}
+.prog-track {
+  height: 6px;
+  background: var(--bg2);
+  border-radius: 999px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+.prog-fill {
+  height: 100%;
+  border-radius: 999px;
+  background: linear-gradient(to right, var(--primary), var(--accent));
+}
+
+/* Utilities */
+.prog-fill-68 { width: 68%; }
+.prog-fill-42 { width: 42%; }
+
+
+.eta-chip {
+  font-size: 12px;
+  padding: 3px 10px;
+  border-radius: 6px;
+  background: rgba(245,158,11,0.1);
+  color: #b45309;
+  font-weight: 600;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 768px) {
+  .proj-grid { grid-template-columns: 1fr; }
+}

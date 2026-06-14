@@ -1,0 +1,24 @@
+# ── Node ──
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ── Environment ──
+.env
+.env.local
+.env.*.local
+
+# ── Uploads (resume files are transient; never commit them) ──
+backend/uploads/*
+!backend/uploads/.gitkeep
+
+# ── OS / Editor ──
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# ── Build output ──
+dist/
+build/
