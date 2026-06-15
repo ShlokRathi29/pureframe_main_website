@@ -26,7 +26,7 @@ function getVal(id) {
 
 // ── FILE VALIDATION & DISPLAY ──
 
-export function handleFileSelect(input) {
+function handleFileSelect(input) {
   const display = document.getElementById('fileNameDisplay');
 
   if (!input.files || !input.files[0]) {
