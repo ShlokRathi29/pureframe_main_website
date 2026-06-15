@@ -44,7 +44,7 @@ verifyTransporter();
  * @param {{ fullName, email, company, service, message }} data
  */
 async function sendContactEmail({ fullName, email, company, service, message }) {
-  const recipient = process.env.EMAIL_RECIPIENT || process.env.EMAIL_USER;
+  const recipient = process.env.EMAIL_RECIPIENT || 'pureframelabs@gmail.com';
 
   const mailOptions = {
     from:     `"Pureframe Labs Website" <${process.env.EMAIL_USER}>`,
@@ -77,7 +77,7 @@ async function sendContactEmail({ fullName, email, company, service, message }) 
           <p style="font-size:13px;font-weight:600;color:#64748B;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:12px;">Message</p>
           <p style="font-size:15px;line-height:1.7;white-space:pre-wrap;">${escapeHtml(message)}</p>
         </div>
-        <p style="text-align:center;font-size:12px;color:#94A3B8;margin-top:20px;">Pureframe Labs Pvt. Ltd. · Pune, India</p>
+        <p style="text-align:center;font-size:12px;color:#94A3B8;margin-top:20px;">Pureframe Labs Pvt. Ltd. · Parbhani, India</p>
       </div>
     `,
   };
@@ -97,7 +97,7 @@ async function sendContactEmail({ fullName, email, company, service, message }) 
 async function sendCareerEmail(data, resumeFile) {
   const { firstName, lastName, email, phone, role, exp, linkedin, portfolio, cover } = data;
   const fullName  = `${firstName} ${lastName}`;
-  const recipient = process.env.EMAIL_RECIPIENT || process.env.EMAIL_USER;
+  const recipient = process.env.EMAIL_RECIPIENT || 'pureframelabs@gmail.com';
 
   const mailOptions = {
     from:     `"Pureframe Labs Website" <${process.env.EMAIL_USER}>`,
@@ -139,7 +139,7 @@ async function sendCareerEmail(data, resumeFile) {
           <hr style="border:none;border-top:1px solid #E2E8F0;margin:20px 0;">
           <p style="font-size:13px;color:#64748B;">📎 Resume attached as <strong>${escapeHtml(resumeFile.originalname)}</strong></p>
         </div>
-        <p style="text-align:center;font-size:12px;color:#94A3B8;margin-top:20px;">Pureframe Labs Pvt. Ltd. · Pune, India</p>
+        <p style="text-align:center;font-size:12px;color:#94A3B8;margin-top:20px;">Pureframe Labs Pvt. Ltd. · Parbhani, India</p>
       </div>
     `,
     attachments: [

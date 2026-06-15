@@ -5,8 +5,8 @@
  * deletes the uploaded file from disk.
  */
 
-const fs                          = require('fs');
-const { sendCareerEmail }         = require('../services/emailService');
+const fs = require('fs');
+const { sendCareerEmail } = require('../services/emailService');
 
 /**
  * POST /api/careers
